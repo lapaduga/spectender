@@ -11,30 +11,30 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	form.addEventListener('submit', formSend);
 
-	headerButton.onclick = function(){
+	headerButton.onclick = function () {
 		callback.classList.toggle('active');
 		body.classList.toggle('lock');
 	}
-	close.onclick = function(){
+	close.onclick = function () {
 		callback.classList.toggle('active');
 		body.classList.toggle('lock');
 	}
-	popupArea.onclick = function(){
+	popupArea.onclick = function () {
 		callback.classList.toggle('active');
 		body.classList.toggle('lock');
 	}
 
-	async function formSend(e){
+	async function formSend(e) {
 		e.preventDefault();
 
 		let error = formValidate(form);
 
 		let formData = new FormData(form);
 
-		if(error===0){
+		if (error === 0) {
 			alert.classList.remove('active');
 			form.reset();
-		} else{
+		} else {
 			alert.classList.add('active');
 		}
 	}
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			const input = formReq[index];
 			formRemoveError(input);
 
-			if(input.value === ''){
+			if (input.value === '') {
 				formAddError(input);
 				error++;
 			}
@@ -69,11 +69,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	window.onscroll = function () { scrollFunction() };
 	function scrollFunction() {
-			if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-				document.getElementById("header").style.backgroundColor = "#fff";
-			} else {
-				document.getElementById("header").style.backgroundColor = "transparent";
-			}
+		if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+			document.getElementById("header").style.backgroundColor = "#fff";
+		} else {
+			document.getElementById("header").style.backgroundColor = "transparent";
+		}
 		if (document.documentElement.clientWidth > 992) {
 			if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
 				document.getElementById("header").style.paddingTop = "10px";
@@ -81,6 +81,12 @@ document.addEventListener('DOMContentLoaded', function () {
 			} else {
 				document.getElementById("header").style.paddingTop = "60px";
 				document.getElementById("header").style.paddingBottom = "0px";
+			}
+		}
+		if (document.documentElement.clientWidth < 993) {
+			if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+				document.getElementById("header").style.paddingTop = "10px";
+				document.getElementById("header").style.paddingBottom = "10px";
 			}
 		}
 	}
