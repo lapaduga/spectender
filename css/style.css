@@ -146,16 +146,32 @@ body {
 @media (max-width: 992px) {
   .header__logo {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 150px;
-            flex: 0 0 150px;
+        -ms-flex: 0 0 180px;
+            flex: 0 0 180px;
   }
 }
 
 @media (max-width: 460px) {
   .header__logo {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 100px;
-            flex: 0 0 100px;
+        -ms-flex: 0 0 30px;
+            flex: 0 0 30px;
+  }
+}
+
+@media (max-width: 460px) {
+  .desktop-logo {
+    display: none;
+  }
+}
+
+.mobile-logo {
+  display: none;
+}
+
+@media (max-width: 460px) {
+  .mobile-logo {
+    display: block;
   }
 }
 
@@ -202,7 +218,7 @@ body {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 600px) {
   .header__phone {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 30px;
@@ -257,15 +273,6 @@ body {
   }
   .header__callback a {
     font-size: 14px;
-  }
-}
-
-@media (max-width: 460px) {
-  .header__callback {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 110px;
-            flex: 0 0 110px;
-    text-align: center;
   }
 }
 

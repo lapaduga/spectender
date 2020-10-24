@@ -39,10 +39,21 @@ body {
 		max-width: 100%;
 	}
 	@media (max-width: 992px) {
-		flex: 0 0 150px;
+		flex: 0 0 180px;
 	}
 	@media (max-width:460px){
-		flex: 0 0 100px;
+		flex: 0 0 30px;
+	}
+}
+.desktop-logo{
+	@media (max-width:460px){
+		display: none;
+	}
+}
+.mobile-logo{
+	display: none;
+	@media (max-width:460px){
+		display: block;
 	}
 }
 .header__phone {
@@ -80,7 +91,7 @@ body {
 			font-size: 20px;
 		}
 	}
-	@media (max-width:767px) {
+	@media (max-width:600px) {
 		flex: 0 0 30px;
 		a{
 			span{
@@ -117,10 +128,6 @@ body {
 		a{
 			font-size: 14px;
 		}
-	}
-	@media (max-width:460px){
-		flex: 0 0 110px;
-		text-align: center;
 	}
 }
 .header__button {
