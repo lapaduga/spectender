@@ -90,4 +90,9 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		}
 	}
+
+	//click on mouse teaser
+	$("#mainscreen__scrolldown").click(function (event) {
+		$('html, body').animate({ scrollTop: '+=700px' }, 800);
+	});
 });

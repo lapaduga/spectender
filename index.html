@@ -6,7 +6,8 @@
 	<meta name="viewport" content="width=device-width">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Спецтендер</title>
 </head>
@@ -39,106 +40,65 @@
 			</div>
 		</header>
 		<main class="main">
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
+			<div class="mainscreen">
+				<div class="container">
+					<div class="mainscreen__body">
+						<div class="mainscreen__info">
+							<h1 class="mainscreen__title">
+								<p>Подача заявок</p> 
+								<p>на торги по банкротству </p>
+								<p>с помощью персонального брокера</p>
+							</h1>
+							<ul class="mainscreen__list">
+								<li>
+									Без ЭЦП
+								</li>
+								<li>
+									Вам не нужно покупать электронно-цифровую подпись (ЭЦП)
+								</li>
+								<li>
+									Без аккредитации на ЭТП
+								</li>
+								<li>
+									Вам не нужно регистрироваться на торговой площадке
+								</li>
+								<li>
+									Без юридических проблем
+								</li>
+								<li>
+									Подадим заявку на торги и обеспечим ее юридическую защиту
+								</li>
+							</ul>
+							<div id="mainscreen__scrolldown" class="mainscreen__scrolldown">
+								<img src="img/mainscreen/arrow.png" alt="">
+								узнать больше
+							</div>
+						</div>
+						<div class="mainscreen__consult">
+							<div class="mainscreen__image">
+								<img src="img/mainscreen/illustration.png" alt="">
+							</div>
+							<form action="#" id="mainscreen__form" class="mainscreen__form">
+								<div class="mainscreen__item">
+									<label for="mainscreen__input-1" class="mainscreen__label">
+										Как Вас зовут?
+									</label>
+									<input placeholder="Введите Имя" id="mainscreen__input-1" type="text" class="mainscreen__input" name="mainscreen__input-name">
+								</div>
+								<div class="mainscreen__item">
+									<label for="mainscreen__input-2" class="mainscreen__label">
+										Ваш номер телефона
+									</label>
+									<input placeholder="Введите номер" id="mainscreen__input-2" type="text" class="mainscreen__input" name="mainscreen__input-phone">
+								</div>
+								<div class="mainscreen__item mainscreen__item-button">
+									<button type="submit" class="mainscreen__button">Получить консультацию</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
 		<div class="footer">
 			<div class="container">
@@ -174,9 +134,12 @@
 					<div class="popup__subtitle">
 						И мы перезвоним в указанное Вами время
 					</div>
-					<input placeholder="Как к вам обращаться?" type="text" class="popup__person-name popup__input-item _req" name="name" value="">
-					<input placeholder="Ваш номер телефона" type="tel" class="popup__phone popup__input-item _req" name="phone" value="">
-					<textarea placeholder="Укажите удобные для Вас день и время разговора" id="time" name="time" class="popup__time popup__input-item _req"></textarea>
+					<input placeholder="Как к вам обращаться?" type="text"
+						class="popup__person-name popup__input-item _req" name="name" value="">
+					<input placeholder="Ваш номер телефона" type="tel" class="popup__phone popup__input-item _req"
+						name="phone" value="">
+					<textarea placeholder="Укажите удобные для Вас день и время разговора" id="time" name="time"
+						class="popup__time popup__input-item _req"></textarea>
 					<div class="popup__alert">Заполните, пожалуйста, все поля!</div>
 					<button type="submit" class="popup__button">Заказать звонок</button>
 				</form>
