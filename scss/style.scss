@@ -690,6 +690,27 @@ body {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	position: relative;
+	&:before,
+	&:after{
+		content: '';
+		position: absolute;
+		top: 10px;
+		display: block;
+		width: 1px;
+		height: 80%;
+		background-color:#E9EEF7;
+		z-index: -1;
+		@media (max-width:1720px) {
+			display: none;
+		}
+	}
+	&:before{
+		left: 120px;
+	}
+	&:after{
+		left: 57.1%;
+	}
 }
 .property__item {
 	flex: 0 1 50%;
@@ -927,6 +948,45 @@ body {
 		color: #fff;
 		background: #2544c0;
 	}
+}
+
+//how
+
+.how {
+	padding: 95px 0 120px 0;
+	background: url('../img/how/bg01.jpg') 100% 276px no-repeat,
+	url('../img/how/bg03.jpg') 100% 736px no-repeat,
+	url('../img/how/bg02.jpg') 68% 404px no-repeat,
+	url('../img/how/bg04.svg') 100% 0 no-repeat,
+	#F0F7FE;
+	min-height: 1500px;
+}
+.how__body {
+	display: flex;
+}
+.how__explain {
+	flex: 0 1 50%;
+}
+.how__law {
+}
+.how__items {
+}
+.how__item {
+}
+.how__number {
+}
+.how__description {
+}
+.how__subtitle {
+}
+.how__text {
+}
+.how__pictires {
+	flex: 0 1 50%;
+}
+.how__title {
+}
+.how__button {
 }
 
 //footer

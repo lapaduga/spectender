@@ -1152,6 +1152,32 @@ body.lock {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: relative;
+}
+
+.property__items:before, .property__items:after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  display: block;
+  width: 1px;
+  height: 80%;
+  background-color: #E9EEF7;
+  z-index: -1;
+}
+
+@media (max-width: 1720px) {
+  .property__items:before, .property__items:after {
+    display: none;
+  }
+}
+
+.property__items:before {
+  left: 120px;
+}
+
+.property__items:after {
+  left: 57.1%;
 }
 
 .property__item {
@@ -1578,6 +1604,30 @@ body.lock {
 .blue-form__button:hover {
   color: #fff;
   background: #2544c0;
+}
+
+.how {
+  padding: 95px 0 120px 0;
+  background: url("../img/how/bg01.jpg") 100% 276px no-repeat, url("../img/how/bg03.jpg") 100% 736px no-repeat, url("../img/how/bg02.jpg") 68% 404px no-repeat, url("../img/how/bg04.svg") 100% 0 no-repeat, #F0F7FE;
+  min-height: 1500px;
+}
+
+.how__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.how__explain {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.how__pictires {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
 }
 
 .footer {
