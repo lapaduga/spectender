@@ -657,6 +657,14 @@ body.lock {
   background: #2544c0;
   height: 100%;
   width: 100%;
+  border: 1px solid #2544c0;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.mainscreen__button:hover {
+  background: #fff;
+  color: #2544c0;
 }
 
 .title {
@@ -937,6 +945,122 @@ body.lock {
   letter-spacing: -0.06em;
   text-transform: uppercase;
   white-space: nowrap;
+}
+
+.help {
+  padding: 80px 0 120px 0;
+  background: url("../img/help/dots.png") 100% 0 no-repeat, #f2f5fa;
+}
+
+.help__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 64px;
+}
+
+.help__title {
+  margin-bottom: 18px;
+}
+
+.help__text {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.04em;
+  color: #0c193e;
+}
+
+.help__button {
+  color: #fff;
+  background: #2544c0;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 400px;
+  width: 100%;
+  height: 80px;
+  letter-spacing: -0.02em;
+  cursor: pointer;
+  border: 1px solid #2544c0;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.help__button:hover {
+  background: transparent;
+  color: #2544c0;
+}
+
+.help__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.help__card {
+  position: relative;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 48px #e9eef7;
+          box-shadow: 0px 0px 48px #e9eef7;
+}
+
+.help__card-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.04em;
+  color: #0c193e;
+  margin-bottom: 14px;
+}
+
+.help__number {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  height: 60px;
+  width: 60px;
+  background: #2544c0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.help__icon {
+  max-width: 58px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.help__icon img {
+  max-width: 100%;
 }
 
 .footer {
