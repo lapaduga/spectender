@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	const form = document.getElementById('form');
 	const alert = document.querySelector('.popup__alert');
 	const help = document.querySelector('.help__button');
+	const propLinks = document.querySelectorAll('.property__link');
 
 	//popup
 	headerButton.onclick = function () {
@@ -27,6 +28,12 @@ document.addEventListener('DOMContentLoaded', function () {
 		callback.classList.toggle('active');
 		body.classList.toggle('lock');
 	}
+	propLinks.forEach(function(propLink){
+		propLink.addEventListener('click', function(e) {
+			callback.classList.toggle('active');
+			body.classList.toggle('lock');
+		})
+	})
 
 	//form behaviour
 	form.addEventListener('submit', formSend);
