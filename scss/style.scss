@@ -559,6 +559,9 @@ body {
 .help {
 	padding: 80px 0 120px 0;
 	background: url("../img/help/dots.png") 100% 0 no-repeat, #f2f5fa;
+	@media (max-width:992px) {
+		padding: 30px 0;
+	}
 }
 .help__body {
 }
@@ -567,8 +570,18 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	margin-bottom: 64px;
+	@media (max-width:767px) {
+		margin-bottom: 30px;
+		flex-direction: column;
+	}
 }
 .help__question {
+	margin-right: 20px;
+	@media (max-width:767px) {
+		margin-right: 0;
+		margin-bottom: 20px;
+		text-align: center;
+	}
 }
 .help__title {
 	margin-bottom: 18px;
@@ -579,6 +592,10 @@ body {
 	line-height: 30px;
 	letter-spacing: -0.04em;
 	color: #0c193e;
+	@media (max-width:767px) {
+		font-size: 20px;
+		line-height: normal;
+	}
 }
 .help__button {
 	color: #fff;
@@ -603,11 +620,17 @@ body {
 }
 .help__bottom {
 	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0 -12px;
 }
 .help__card {
 	position: relative;
 	background: #ffffff;
 	box-shadow: 0px 0px 48px #e9eef7;
+	flex: 0 1 400px;
+	padding: 98px 30px 36px 30px;
+	margin: 12px;
 }
 .help__card-title {
 	font-weight: 500;
@@ -616,6 +639,10 @@ body {
 	letter-spacing: -0.04em;
 	color: #0c193e;
 	margin-bottom: 14px;
+	@media (max-width:767px) {
+		font-size: 20px;
+		line-height: normal;
+	}
 }
 .help__number {
 	font-weight: bold;

@@ -8,9 +8,9 @@ document.addEventListener('DOMContentLoaded', function () {
 	const popupArea = document.querySelector('.popup__area');
 	const form = document.getElementById('form');
 	const alert = document.querySelector('.popup__alert');
+	const help = document.querySelector('.help__button');
 
-	form.addEventListener('submit', formSend);
-
+	//popup
 	headerButton.onclick = function () {
 		callback.classList.toggle('active');
 		body.classList.toggle('lock');
@@ -23,6 +23,13 @@ document.addEventListener('DOMContentLoaded', function () {
 		callback.classList.toggle('active');
 		body.classList.toggle('lock');
 	}
+	help.onclick = function () {
+		callback.classList.toggle('active');
+		body.classList.toggle('lock');
+	}
+
+	//form behaviour
+	form.addEventListener('submit', formSend);
 
 	async function formSend(e) {
 		e.preventDefault();
@@ -66,7 +73,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	//header height on scroll behaviour
-
 	window.onscroll = function () { scrollFunction() };
 	function scrollFunction() {
 		if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
