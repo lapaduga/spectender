@@ -93,6 +93,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	//click on mouse teaser
 	$("#mainscreen__scrolldown").click(function (event) {
-		$('html, body').animate({ scrollTop: '+=700px' }, 800);
+		$('html, body').animate({ scrollTop: '+=500px' }, 800);
 	});
 });

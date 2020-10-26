@@ -3,6 +3,7 @@
 html,
 body {
 	font-family: "Inter", sans-serif;
+	//scroll-behavior: smooth;
 }
 body {
 	&.lock {
@@ -170,6 +171,10 @@ body {
 	@media (max-width: 992px) {
 		flex: 0 1 50%;
 	}
+	@media (max-width:767px){
+		flex: none;
+		margin-right: 0;
+	}
 }
 .mainscreen__title {
 	color: #2544c0;
@@ -204,6 +209,16 @@ body {
 			}
 		}
 	}
+	@media (max-width:767px) {
+		margin-bottom: 30px;
+		p {
+			&:first-child,
+			&:nth-child(2),
+			&:last-child {
+				font-size: 30px;
+			}
+		}
+	}
 }
 .mainscreen__list {
 	max-width: 540px;
@@ -232,6 +247,16 @@ body {
 	@media (max-width:767px){
 		margin-left: 20px;
 		max-width: 100%;
+		margin-bottom: 30px;
+		li{
+			margin: 0 0 15px 0px;
+		}
+	}
+	@media (max-width:600px){
+		margin-left: 0;
+		li{
+			font-size: 16px;
+		}
 	}
 }
 .mainscreen__scrolldown {
@@ -260,8 +285,16 @@ body {
 			transform: translate(0, 20px);
 		}
 	}
+	@media (max-width:767px){
+		margin: 0 0 50px 0;
+		display: flex;
+		justify-content: center;
+	}
 }
 .mainscreen__consult {
+	@media (max-width: 767px){
+		min-height: 400px;
+	}
 }
 .mainscreen__image {
 	max-width: 600px;
@@ -269,7 +302,12 @@ body {
 		max-width: 100%;
 	}
 	@media (max-width: 767px){
-		
+		max-width: 450px;
+	}
+	@media (max-width:600px) {
+		img{
+			display: none;
+		}
 	}
 }
 .mainscreen__form {
@@ -286,8 +324,13 @@ body {
 		right: 20px;
 		width: 320px;
 	}
-	@media (max-width:767px) {
-		
+	@media (max-width: 767px){
+		width: 100%;
+	}
+	@media (max-width:600px) {
+		max-width: 87%;
+		right: 50%;
+		transform: translate(50%,0);
 	}
 }
 .mainscreen__item {
