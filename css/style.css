@@ -2493,6 +2493,10 @@ body.lock {
   color: #0c193e;
 }
 
+.contacts__info a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 767px) {
   .contacts__info {
     font-size: 20px;

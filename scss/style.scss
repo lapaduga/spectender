@@ -1492,6 +1492,9 @@ body {
 		font-size: 26px;
 		letter-spacing: -0.04em;
 		color: #0c193e;
+		&:hover{
+			text-decoration: underline;
+		}
 	}
 	@media (max-width: 767px) {
 		font-size: 20px;
