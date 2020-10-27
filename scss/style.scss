@@ -17,6 +17,33 @@ body {
 	flex-direction: column;
 }
 
+//scrolltop
+
+.scrolltop {
+	width: 60px;
+	height: 45px;
+	background: url('../img/scrolltop.png') center no-repeat, #2544c0;
+	border-radius: 1px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	opacity: 0;
+	visibility: hidden;
+	position: fixed;
+	bottom: 128px;
+	right: 60px;
+	z-index: 52;
+	&.active{
+		opacity: 1;
+		visibility: visible;
+	}
+	@media (max-width:767px) {
+		right: 20px;
+		bottom: 20px;
+		width: 45px;
+		height: 35px;
+	}
+}
+
 //header
 
 .header {
@@ -1401,19 +1428,19 @@ body {
 	justify-content: center;
 	flex-wrap: wrap;
 	margin: 0 -20px;
-	@media (max-width:767px) {
+	@media (max-width: 767px) {
 		flex-direction: column;
 		min-height: 400px;
 		padding: 20px 0;
 	}
-	@media (max-width:400px) {
+	@media (max-width: 400px) {
 		align-items: flex-start;
 	}
 }
 .contacts__title {
 	flex: 0 1 25%;
 	padding: 0 20px;
-	@media (max-width:767px){
+	@media (max-width: 767px) {
 		margin-bottom: 20px;
 		text-align: center;
 	}
@@ -1425,13 +1452,13 @@ body {
 	justify-content: center;
 	padding: 0 20px;
 	min-width: 360px;
-	@media (max-width:767px){
+	@media (max-width: 767px) {
 		margin-bottom: 20px;
-		&:last-child{
+		&:last-child {
 			margin-bottom: 0;
 		}
 	}
-	@media (max-width:400px){
+	@media (max-width: 400px) {
 		min-width: 280px;
 	}
 }
@@ -1440,7 +1467,7 @@ body {
 	img {
 		max-width: 100%;
 	}
-	@media (max-width:767px) {
+	@media (max-width: 767px) {
 		flex: 0 0 40px;
 	}
 }
@@ -1466,15 +1493,15 @@ body {
 		letter-spacing: -0.04em;
 		color: #0c193e;
 	}
-	@media (max-width:767px){
+	@media (max-width: 767px) {
 		font-size: 20px;
-		a{
+		a {
 			font-size: 20px;
 		}
 	}
-	@media (max-width:360px) {
+	@media (max-width: 360px) {
 		font-size: 16px;
-		a{
+		a {
 			font-size: 16px;
 		}
 	}

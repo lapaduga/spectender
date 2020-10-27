@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	const help = document.querySelector('.help__button');
 	const propLinks = document.querySelectorAll('.property__link');
 	const how = document.querySelector('.how__button');
+	const scrollTop = document.querySelector('.scrolltop');
 
 	//popup
 	headerButton.onclick = function () {
@@ -107,7 +108,18 @@ document.addEventListener('DOMContentLoaded', function () {
 				document.getElementById("header").style.paddingBottom = "10px";
 			}
 		}
+
+		if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600){
+			scrollTop.classList.add('active');
+		} else{
+			scrollTop.classList.remove('active');
+		}
 	}
+
+	$(scrollTop).click(function() {
+		$('html, body').animate({scrollTop: 0},500);
+		return false;
+	})
 
 	//click on mouse teaser
 	$("#mainscreen__scrolldown").click(function (event) {
