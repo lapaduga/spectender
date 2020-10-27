@@ -1169,7 +1169,7 @@ body {
 		min-width: 300px;
 		min-height: 215px;
 	}
-	@media (max-width:360px) {
+	@media (max-width: 360px) {
 		min-width: 280px;
 	}
 }
@@ -1209,6 +1209,207 @@ body {
 	letter-spacing: -0.04em;
 	color: #0c193e;
 	@media (max-width: 767px) {
+		font-size: 16px;
+		line-height: normal;
+	}
+}
+
+//examples
+
+.examples {
+	padding: 30px 0 100px 0;
+	@media (max-width: 992px) {
+		padding: 30px 0;
+	}
+}
+.examples__title {
+	margin-bottom: 90px;
+	text-align: center;
+	@media (max-width:992px){
+		margin-bottom: 30px;
+	}
+}
+.examples__slider {
+}
+.slider {
+	position: relative;
+	/* Слайдер */
+	.slick-slider {
+	}
+	/* Слайдер запущен */
+	.slick-slider.slick-initialized {
+	}
+	/* Слайдер с точками */
+	.slick-slider.slick-dotted {
+	}
+	/* Ограничивающая оболочка */
+	.slick-list {
+		overflow: hidden;
+	}
+	/* Лента слайдов */
+	.slick-track {
+		display: flex;
+		align-items: flex-start;
+	}
+	/* Слайд */
+	.slick-slide {
+	}
+	/* Слайд активный (показывается) */
+	.slick-slide.slick-active {
+	}
+	/* Слайд основной */
+	.slick-slide.slick-current {
+	}
+	/* Слайд по центру */
+	.slick-slide.slick-center {
+	}
+	/* Клонированный слайд */
+	.slick-slide.slick-cloned {
+	}
+	/* Стрелка */
+	.slick-arrow {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		z-index: 10;
+		font-size: 0;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		transition: all 0.3s ease 0s;
+	}
+	/* Стрелка влево */
+	.slick-arrow.slick-prev {
+		background: url("../img/slider/left.png") center no-repeat, #2544c0;
+		transform: translate(0,-100%);
+	}
+	/* Стрелка вправо */
+	.slick-arrow.slick-next {
+		background: url("../img/slider/right.png") center no-repeat, #2544c0;
+		transform: translate(0,10px);
+	}
+	/* Стрелка не активная */
+	.slick-arrow.slick-disabled {
+		opacity: 0.5;
+	}
+	/* Точки (булиты) */
+	.slick-dots {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		z-index: 10;
+		transform: translate(0,-50%);
+	}
+	.slick-dots li {
+	}
+	/* Активная точка */
+	.slick-dots li.slick-active {
+		list-style: none;
+		button{
+			border: 2px solid #2544C0;
+			background: #2544C0;
+		}
+	}
+	/* Элемент точки */
+	.slick-dots li button {
+		font-size: 0;
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		border: 2px solid #B2BDD2;
+		background: transparent;
+		margin-bottom: 12px;
+		transition: all 0.3s ease 0s;
+	}
+}
+.slider-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1400px;
+	margin-right: auto;
+	@media (max-width:1600px) {
+		padding: 0 90px 0 60px;
+	}
+	@media (max-width:1080px){
+		padding: 0 60px 0 40px;
+	}
+	@media (max-width:992px){
+		align-items: stretch;
+	}
+	@media (max-width:767px) {
+		flex-direction: column;
+		padding: 0 60px 0 30px;
+	}
+	@media (max-width:360px) {
+		padding: 0 50px 0 30px;
+	}
+}
+.slider__image {
+	max-width: 686px;
+	flex: 0 0 686px;
+	border-radius: 8px;
+	overflow: hidden;
+	img {
+		max-width: 100%;
+	}
+	@media (max-width:1365px) {
+		flex: 0 0 500px;
+	}
+	@media (max-width:992px) {
+		flex: 0 0 300px;
+	}
+	@media (max-width:767px){
+		flex: 1 1 auto;
+	}
+}
+.slider__info {
+	flex: 1 1 auto;
+	background: #ffffff;
+	border-radius: 12px;
+	color: #0c193e;
+	padding: 70px 110px;
+	margin-left: -110px;
+	box-shadow: 70px 20px 70px #f2f5fa;
+	@media (max-width:1600px){
+		box-shadow: 20px 20px 20px #f2f5fa;
+	}
+	@media (max-width:1365px) {
+		padding: 30px;
+		margin-left: -30px;
+	}
+	@media (max-width:992px){
+		box-shadow: 0px 0px 0px #f2f5fa;
+		padding: 0 0 0 20px;
+		margin-left: 0;
+	}
+	@media (max-width:767px) {
+		padding: 20px 0 0 0;
+	}
+}
+.slider__info-title {
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 70px;
+	letter-spacing: -0.04em;
+	margin-bottom: 12px;
+	@media (max-width:1365px) {
+		line-height: normal;
+	}
+	@media (max-width:992px){
+		font-size: 26px;
+	}
+}
+.slider__text {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 30px;
+	letter-spacing: -0.04em;
+	@media (max-width:992px){
 		font-size: 16px;
 		line-height: normal;
 	}

@@ -33,8 +33,8 @@ document.addEventListener('DOMContentLoaded', function () {
 		callback.classList.toggle('active');
 		body.classList.toggle('lock');
 	}
-	propLinks.forEach(function(propLink){
-		propLink.addEventListener('click', function(e) {
+	propLinks.forEach(function (propLink) {
+		propLink.addEventListener('click', function (e) {
 			callback.classList.toggle('active');
 			body.classList.toggle('lock');
 		})
@@ -112,5 +112,23 @@ document.addEventListener('DOMContentLoaded', function () {
 	//click on mouse teaser
 	$("#mainscreen__scrolldown").click(function (event) {
 		$('html, body').animate({ scrollTop: '+=500px' }, 800);
+	});
+
+	//examples slider
+	$('.slider').slick({
+		dots: true,
+		adaptiveHeight: true,
+		infinite: false,
+		centerMode: true,
+		variableWidth: true,
+		responsive:[
+			{
+				breakpoint:1366,
+				settings:{
+					centerMode: false,
+					variableWidth: false
+				}
+			}
+		]
 	});
 });
