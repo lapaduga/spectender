@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	const alert = document.querySelector('.popup__alert');
 	const help = document.querySelector('.help__button');
 	const propLinks = document.querySelectorAll('.property__link');
+	const how = document.querySelector('.how__button');
 
 	//popup
 	headerButton.onclick = function () {
@@ -25,6 +26,10 @@ document.addEventListener('DOMContentLoaded', function () {
 		body.classList.toggle('lock');
 	}
 	help.onclick = function () {
+		callback.classList.toggle('active');
+		body.classList.toggle('lock');
+	}
+	how.onclick = function () {
 		callback.classList.toggle('active');
 		body.classList.toggle('lock');
 	}

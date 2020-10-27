@@ -952,21 +952,42 @@ body {
 
 //how
 
-.container{
-	border: 1px solid red;
-}
 .how {
 	padding: 95px 0 120px 0;
-	background: url("../img/how/bg01.jpg") 100% 276px no-repeat, url("../img/how/bg03.jpg") 100% 736px no-repeat,
+	background: url("../img/how/bg01.jpg") 100% 276px no-repeat, 
+	url("../img/how/bg03.jpg") 100% 736px no-repeat,
 		url("../img/how/bg02.jpg") 68% 404px no-repeat, url("../img/how/bg04.svg") 100% 0 no-repeat, #f0f7fe;
-	min-height: 1500px;
+	@media (max-width: 1280px) {
+		background: url("../img/how/bg01.jpg") 100% 276px no-repeat, 
+		url("../img/how/bg02.jpg") 100% 404px no-repeat, 
+		url("../img/how/bg04.svg") 100% 0 no-repeat, 
+		#f0f7fe;
+	}
+	@media (max-width: 992px) {
+		background: #f0f7fe;
+		padding: 30px 0;
+	}
 }
 .how__body {
 	display: flex;
+	@media (max-width: 992px) {
+		flex-direction: column-reverse;
+	}
 }
 .how__explain {
 	flex: 0 1 50%;
 	color: #0c193e;
+	padding: 20px 20px 0 140px;
+	margin-right: 20px;
+	background: #f0f7fe;
+	@media (max-width: 1280px) {
+		flex: 1 1 auto;
+	}
+	@media (max-width: 992px) {
+		flex: none;
+		padding: 0;
+		margin-right: 0;
+	}
 }
 .how__law {
 	font-size: 20px;
@@ -974,13 +995,26 @@ body {
 	letter-spacing: -0.04em;
 	margin-bottom: 80px;
 	max-width: 544px;
-}
-.how__items {
+	@media (max-width: 992px) {
+		max-width: 100%;
+		margin-bottom: 30px;
+	}
+	@media (max-width: 360px) {
+		font-size: 16px;
+		line-height: normal;
+	}
 }
 .how__item {
 	margin-bottom: 64px;
 	max-width: 544px;
 	display: flex;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	@media (max-width: 992px) {
+		max-width: 100%;
+		margin-bottom: 30px;
+	}
 }
 .how__number {
 	font-weight: bold;
@@ -995,10 +1029,22 @@ body {
 	width: 60px;
 	background: #2544c0;
 	flex: 0 0 60px;
+	@media (max-width: 360px) {
+		font-size: 20px;
+		line-height: normal;
+		flex: 0 0 40px;
+		height: 40px;
+	}
 }
 .how__description {
 	flex: 1 1 auto;
 	padding-left: 80px;
+	@media (max-width: 992px) {
+		padding-left: 20px;
+	}
+	@media (max-width: 360px) {
+		padding-left: 10px;
+	}
 }
 .how__subtitle {
 	font-weight: 500;
@@ -1006,24 +1052,91 @@ body {
 	line-height: 30px;
 	letter-spacing: -0.04em;
 	margin-bottom: 20px;
+	@media (max-width: 360px) {
+		font-size: 20px;
+		line-height: normal;
+		margin-bottom: 10px;
+	}
 }
 .how__text {
 	font-weight: 300;
 	font-size: 18px;
 	line-height: 28px;
 	letter-spacing: -0.04em;
+	@media (max-width: 360px) {
+		font-size: 16px;
+		line-height: normal;
+	}
 }
 .how__pictires {
 	flex: 0 1 50%;
 	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	@media (max-width: 1280px) {
+		flex: none;
+	}
+	@media (max-width: 992px) {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 20px;
+	}
+	@media (max-width: 600px) {
+		flex-direction: column;
+	}
 }
 .how__title {
 	max-width: 400px;
 	display: flex;
-	flex-direction: column;
-	border: 1px solid red;
+	flex: 1 1 auto;
+	@media (max-width: 992px) {
+		flex: none;
+		padding-right: 20px;
+	}
+	@media (max-width: 767px) {
+		max-width: none;
+		width: 50%;
+	}
+	@media (max-width: 600px) {
+		width: 100%;
+		margin-bottom: 20px;
+		text-align: center;
+	}
 }
 .how__button {
+	padding: 20px;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	letter-spacing: -0.02em;
+	color: #ffffff;
+	height: 80px;
+	max-width: 354px;
+	width: 100%;
+	background: #2544c0;
+	cursor: pointer;
+	align-self: flex-start;
+	margin-bottom: 160px;
+	border: 1px solid #2544c0;
+	transition: all 0.3s ease 0s;
+	&:hover {
+		background-color: transparent;
+		color: #2544c0;
+	}
+	@media (max-width: 992px) {
+		align-self: center;
+		margin-bottom: 0;
+	}
+	@media (max-width: 600px) {
+		height: 60px;
+	}
+	@media (max-width: 360px) {
+		font-size: 16px;
+	}
 }
 
 //footer
