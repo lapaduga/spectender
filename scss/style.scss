@@ -692,23 +692,23 @@ body {
 	flex-wrap: wrap;
 	position: relative;
 	&:before,
-	&:after{
-		content: '';
+	&:after {
+		content: "";
 		position: absolute;
 		top: 10px;
 		display: block;
 		width: 1px;
 		height: 80%;
-		background-color:#E9EEF7;
+		background-color: #e9eef7;
 		z-index: -1;
-		@media (max-width:1720px) {
+		@media (max-width: 1720px) {
 			display: none;
 		}
 	}
-	&:before{
+	&:before {
 		left: 120px;
 	}
-	&:after{
+	&:after {
 		left: 57.1%;
 	}
 }
@@ -808,7 +808,7 @@ body {
 
 .blue-form {
 	margin-bottom: 120px;
-	@media (max-width:992px) {
+	@media (max-width: 992px) {
 		margin-bottom: 30px;
 	}
 }
@@ -822,22 +822,22 @@ body {
 	box-shadow: 0px 0px 70px #e2e9f6;
 	padding: 0 140px;
 	color: #ffffff;
-	@media (max-width:1365px) {
+	@media (max-width: 1365px) {
 		flex-direction: column;
 		justify-content: center;
 		align-items: flex-start;
 	}
-	@media (max-width:992px) {
+	@media (max-width: 992px) {
 		padding: 30px;
 	}
-	@media (max-width:360px){
+	@media (max-width: 360px) {
 		padding: 30px 20px;
 	}
 }
 .blue-form__ask {
 	flex: 1 1 auto;
 	margin-right: 20px;
-	@media (max-width:1365px){
+	@media (max-width: 1365px) {
 		flex: none;
 		margin-right: 0;
 		margin-bottom: 20px;
@@ -849,7 +849,7 @@ body {
 	line-height: 120%;
 	letter-spacing: -0.04em;
 	margin-bottom: 20px;
-	@media (max-width:360px) {
+	@media (max-width: 360px) {
 		font-size: 26px;
 		margin-bottom: 10px;
 	}
@@ -859,17 +859,17 @@ body {
 	font-size: 18px;
 	line-height: 120%;
 	letter-spacing: -0.04em;
-	@media (max-width:360px) {
+	@media (max-width: 360px) {
 		font-size: 14px;
 	}
 }
 .blue-form__form {
 	display: flex;
 	flex: 0 1 820px;
-	@media (max-width:1365px){
+	@media (max-width: 1365px) {
 		flex: none;
 	}
-	@media (max-width:767px) {
+	@media (max-width: 767px) {
 		flex-direction: column;
 		width: 100%;
 	}
@@ -881,16 +881,16 @@ body {
 	&:not(:last-child) {
 		border-right: transparent;
 	}
-	@media (max-width:992px){
+	@media (max-width: 992px) {
 		padding: 20px;
 	}
-	@media (max-width:767px){
+	@media (max-width: 767px) {
 		&:not(:last-child) {
 			border-right: 1px solid #6077d3;
 			border-bottom: transparent;
 		}
 	}
-	@media (max-width:360px) {
+	@media (max-width: 360px) {
 		padding: 14px 10px;
 		height: 70px;
 	}
@@ -915,14 +915,14 @@ body {
 		letter-spacing: -0.02em;
 		color: #fff;
 	}
-	@media (max-width:767px){
+	@media (max-width: 767px) {
 		flex: none;
 		width: 100%;
 		max-width: 100%;
 	}
-	@media (max-width:360px){
+	@media (max-width: 360px) {
 		font-size: 20px;
-		&::placeholder{
+		&::placeholder {
 			font-size: 20px;
 		}
 	}
@@ -930,7 +930,7 @@ body {
 .blue-form__item-button {
 	padding: 0;
 	flex: 0 0 180px;
-	@media (max-width:767px){
+	@media (max-width: 767px) {
 		flex: none;
 	}
 }
@@ -944,7 +944,7 @@ body {
 	letter-spacing: -0.02em;
 	color: #35312e;
 	transition: all 0.3s ease 0s;
-	&:hover{
+	&:hover {
 		color: #fff;
 		background: #2544c0;
 	}
@@ -952,13 +952,13 @@ body {
 
 //how
 
+.container{
+	border: 1px solid red;
+}
 .how {
 	padding: 95px 0 120px 0;
-	background: url('../img/how/bg01.jpg') 100% 276px no-repeat,
-	url('../img/how/bg03.jpg') 100% 736px no-repeat,
-	url('../img/how/bg02.jpg') 68% 404px no-repeat,
-	url('../img/how/bg04.svg') 100% 0 no-repeat,
-	#F0F7FE;
+	background: url("../img/how/bg01.jpg") 100% 276px no-repeat, url("../img/how/bg03.jpg") 100% 736px no-repeat,
+		url("../img/how/bg02.jpg") 68% 404px no-repeat, url("../img/how/bg04.svg") 100% 0 no-repeat, #f0f7fe;
 	min-height: 1500px;
 }
 .how__body {
@@ -966,25 +966,62 @@ body {
 }
 .how__explain {
 	flex: 0 1 50%;
+	color: #0c193e;
 }
 .how__law {
+	font-size: 20px;
+	line-height: 30px;
+	letter-spacing: -0.04em;
+	margin-bottom: 80px;
+	max-width: 544px;
 }
 .how__items {
 }
 .how__item {
+	margin-bottom: 64px;
+	max-width: 544px;
+	display: flex;
 }
 .how__number {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	letter-spacing: -0.04em;
+	color: #ffffff;
+	height: 60px;
+	width: 60px;
+	background: #2544c0;
+	flex: 0 0 60px;
 }
 .how__description {
+	flex: 1 1 auto;
+	padding-left: 80px;
 }
 .how__subtitle {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 30px;
+	letter-spacing: -0.04em;
+	margin-bottom: 20px;
 }
 .how__text {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 28px;
+	letter-spacing: -0.04em;
 }
 .how__pictires {
 	flex: 0 1 50%;
+	display: flex;
 }
 .how__title {
+	max-width: 400px;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid red;
 }
 .how__button {
 }

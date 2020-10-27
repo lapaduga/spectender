@@ -1156,13 +1156,13 @@ body.lock {
 }
 
 .property__items:before, .property__items:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 10px;
   display: block;
   width: 1px;
   height: 80%;
-  background-color: #E9EEF7;
+  background-color: #e9eef7;
   z-index: -1;
 }
 
@@ -1606,9 +1606,13 @@ body.lock {
   background: #2544c0;
 }
 
+.container {
+  border: 1px solid red;
+}
+
 .how {
   padding: 95px 0 120px 0;
-  background: url("../img/how/bg01.jpg") 100% 276px no-repeat, url("../img/how/bg03.jpg") 100% 736px no-repeat, url("../img/how/bg02.jpg") 68% 404px no-repeat, url("../img/how/bg04.svg") 100% 0 no-repeat, #F0F7FE;
+  background: url("../img/how/bg01.jpg") 100% 276px no-repeat, url("../img/how/bg03.jpg") 100% 736px no-repeat, url("../img/how/bg02.jpg") 68% 404px no-repeat, url("../img/how/bg04.svg") 100% 0 no-repeat, #f0f7fe;
   min-height: 1500px;
 }
 
@@ -1622,12 +1626,89 @@ body.lock {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
+  color: #0c193e;
+}
+
+.how__law {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.04em;
+  margin-bottom: 80px;
+  max-width: 544px;
+}
+
+.how__item {
+  margin-bottom: 64px;
+  max-width: 544px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.how__number {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  height: 60px;
+  width: 60px;
+  background: #2544c0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60px;
+          flex: 0 0 60px;
+}
+
+.how__description {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding-left: 80px;
+}
+
+.how__subtitle {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.04em;
+  margin-bottom: 20px;
+}
+
+.how__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.04em;
 }
 
 .how__pictires {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.how__title {
+  max-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid red;
 }
 
 .footer {
