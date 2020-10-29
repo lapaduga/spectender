@@ -12,6 +12,10 @@ document.addEventListener('DOMContentLoaded', function () {
 	const propLinks = document.querySelectorAll('.property__link');
 	const how = document.querySelector('.how__button');
 	const scrollTop = document.querySelector('.scrolltop');
+	const logo = document.querySelector('.header__logo');
+	const thx = document.querySelector('#thanks');
+	const closeThx = document.querySelector('.popup-thx__close');
+	const popupAreaThx = document.querySelector('.popup-thx__area');
 
 	//popup
 	headerButton.onclick = function () {
@@ -40,6 +44,20 @@ document.addEventListener('DOMContentLoaded', function () {
 			body.classList.toggle('lock');
 		})
 	})
+	
+	//popup-thx
+	logo.onclick = function () {
+		thx.classList.toggle('active');
+		body.classList.toggle('lock');
+	}
+	closeThx.onclick = function () {
+		thx.classList.toggle('active');
+		body.classList.toggle('lock');
+	}
+	popupAreaThx.onclick = function () {
+		thx.classList.toggle('active');
+		body.classList.toggle('lock');
+	}
 
 	//form behaviour
 	form.addEventListener('submit', formSend);
