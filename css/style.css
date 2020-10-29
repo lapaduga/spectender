@@ -2781,6 +2781,7 @@ body.lock {
 @media (max-width: 360px) {
   .popup__input-item {
     padding: 0 10px;
+    height: 60px;
   }
 }
 
