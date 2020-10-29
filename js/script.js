@@ -145,6 +145,37 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 	//examples slider
+	$('.partners__slider').slick({
+		arrows:false,
+		dots: false,
+		slidesToShow: 6,
+		centerMode: false,
+		variableWidth: false,
+		responsive:[
+			{
+				breakpoint: 1366,
+				settings: {
+					slidesToShow: 4
+				}
+			},
+			{
+				breakpoint: 993,
+				settings: {
+					slidesToShow: 3,
+					centerMode: true,
+					variableWidth: true
+				}
+			},
+			{
+				breakpoint: 361,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
+	});
+
+	//examples slider
 	$('.slider').slick({
 		dots: true,
 		adaptiveHeight: true,
