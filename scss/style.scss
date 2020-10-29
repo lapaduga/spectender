@@ -1676,6 +1676,7 @@ body {
 	border: 1px solid #e9eef7;
 	margin-bottom: 20px;
 	transition: all 0.3s ease 0s;
+	font-size: 16px;
 	&::placeholder {
 		font-weight: 300;
 		font-size: 16px;
@@ -1695,6 +1696,7 @@ body {
 	padding: 20px;
 	min-height: 100px;
 	margin-bottom: 15px;
+	font-size: 16px;
 	@media (max-width: 360px) {
 		padding: 10px;
 	}

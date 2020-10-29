@@ -2745,6 +2745,7 @@ body.lock {
   margin-bottom: 20px;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  font-size: 16px;
 }
 
 .popup__input-item::-webkit-input-placeholder {
@@ -2788,6 +2789,7 @@ body.lock {
   padding: 20px;
   min-height: 100px;
   margin-bottom: 15px;
+  font-size: 16px;
 }
 
 @media (max-width: 360px) {
