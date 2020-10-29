@@ -2777,11 +2777,23 @@ body.lock {
           box-shadow: 0px 0px 5px red;
 }
 
+@media (max-width: 360px) {
+  .popup__input-item {
+    padding: 0 10px;
+  }
+}
+
 .popup__time {
   resize: vertical;
   padding: 20px;
   min-height: 100px;
   margin-bottom: 15px;
+}
+
+@media (max-width: 360px) {
+  .popup__time {
+    padding: 10px;
+  }
 }
 
 .popup__alert {
