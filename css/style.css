@@ -2767,21 +2767,6 @@ body.lock {
   font-size: 16px;
 }
 
-@media (max-width: 360px) {
-  .popup__input-item::-webkit-input-placeholder {
-    font-size: 14px;
-  }
-  .popup__input-item:-ms-input-placeholder {
-    font-size: 14px;
-  }
-  .popup__input-item::-ms-input-placeholder {
-    font-size: 14px;
-  }
-  .popup__input-item::placeholder {
-    font-size: 14px;
-  }
-}
-
 .popup__input-item:focus {
   -webkit-box-shadow: 0px 0px 5px #8ba9fd;
           box-shadow: 0px 0px 5px #8ba9fd;

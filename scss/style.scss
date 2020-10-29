@@ -1679,9 +1679,6 @@ body {
 	&::placeholder {
 		font-weight: 300;
 		font-size: 16px;
-		@media (max-width: 360px) {
-			font-size: 14px;
-		}
 	}
 	&:focus {
 		box-shadow: 0px 0px 5px#8ba9fd;
