@@ -764,6 +764,10 @@ body.lock {
   margin-bottom: 46px;
 }
 
+.broker__title h1 {
+  font-weight: 500;
+}
+
 @media (max-width: 767px) {
   .broker__title {
     margin-bottom: 20px;

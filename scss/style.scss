@@ -459,6 +459,9 @@ body {
 
 .broker__title {
 	margin-bottom: 46px;
+	h1{
+		font-weight: 500;
+	}
 	@media (max-width: 767px) {
 		margin-bottom: 20px;
 	}
